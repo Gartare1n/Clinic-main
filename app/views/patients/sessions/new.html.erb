@@ -1,0 +1,42 @@
+<section class="intro">
+  <div class="d-flex align-items-center pt-4">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card" style="border-radius: 1rem;">
+            <div class="card-body py-0 px-5 text-center">
+
+              <div class="my-md-3 pb-2">
+
+                <h1 class="fw-bold mb-0">Log In</h1>
+
+                <i class="fa fa-user-md fa-2x my-2"></i>
+                <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+                  
+                
+                  <div class="form-outline mb-3">
+                    <%= f.text_field :phone, autofocus: true, placeholder: "Phone", class:"form-control form-control-lg" %>
+                                      
+                  </div>
+
+                  <div class="form-outline mb-3">
+                    <%= f.password_field :password, placeholder: "Password", class:"form-control form-control-lg" %>
+                    
+                  </div>
+                  <%= f.submit "Log in", class:"btn btn-primary btn-lg btn-rounded text-white px-5" %>
+                  
+                <% end %>
+              </div>
+
+              <div class="py-4">
+                <p class="mb-0">Don't have an account? <%= render "devise/shared/links", class:"text-body fw-bold" %></p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

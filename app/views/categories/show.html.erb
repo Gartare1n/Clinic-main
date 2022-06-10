@@ -1,0 +1,11 @@
+
+<h1 class="text-center mt-4"><%= @category.name %></h1>
+
+<!--Place admin checker there, if i won't-->
+  <div class="text-center mt-4">
+  <%= link_to "Edit category name", edit_category_path(@category), class: "btn btn-primary text-white disabled" %>
+</div>
+
+<!--<h3 class="text-center mt-5">Doctors</h3>-->
+
+<%= render 'doctors/list' %>
