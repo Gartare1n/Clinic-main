@@ -8,3 +8,7 @@
 AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
 Doctor.create!(email: 'doctor1@example.com', phone: "380980543811",password: 'doctor1', password_confirmation: 'doctor1')
 Patient.create!(email: 'patient1@example.com', phone: "380980543812",password: 'patient1', password_confirmation: 'patient1')
+Appointment.create!(subject: 'TestAppointmentClose', doctor_id: "1", patient_id: "1", recom: "Take Care!")
+Appointment.create(subject: 'TestAppointmentOpen', doctor_id: "1", patient_id: "1")
+Category.create!(name: "Therapists")
+DoctorCategory.create!(doctor_id: "1", category_id: "1")
