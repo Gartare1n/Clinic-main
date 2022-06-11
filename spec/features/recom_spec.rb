@@ -19,4 +19,5 @@ RSpec.describe "Recommendation Features" do
     click_on 'Submit'
 
   end
+  
 end
